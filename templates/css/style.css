@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'FuturaLtBTLight';
+    src: url('../fonts/futurabt-light.eot');
+    src: url('../fonts/futurabt-light.eot') format('embedded-opentype'),
+         url('../fonts/futurabt-light.woff') format('woff'),
+         url('../fonts/futurabt-light.ttf') format('truetype'),
+         url('../fonts/futurabt-light.svg#FuturaLtBTLight') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaLTMediumRegular';
+    src: url('../fonts/futuraltmedium.eot');
+    src: url('../fonts/futuraltmedium.eot') format('embedded-opentype'),
+         url('../fonts/futuraltmedium.woff') format('woff'),
+         url('../fonts/futuraltmedium.ttf') format('truetype'),
+         url('../fonts/futuraltmedium.svg#FuturaLTMediumRegular') format('svg');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'FuturaLTMediumRegular';
+}
+
+header {
+    background-color: #FFF;
+    border-bottom: 1px solid #9e9e9e;
+    height: 85px;
+    width: 100%;
+}
+
+header figure {
+    width: 50%;
+    float: left;
+    margin: 0;
+}
+
+header figure  img{
+    width: 40%;
+    padding: .7em 0em;
+}
+
+#header {
+    margin: 0em 8em;
+}
+
+header #iniciar_sesion {
+    margin: 1.4em 0em;
+    width: 50%;
+    float: left;
+}
+
+header #iniciar_sesion .email {
+    float: left;
+    padding-right: 10px;
+}
+
+header #iniciar_sesion input[type="email"] {
+    width: 178px;
+    height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'FuturaLTMediumRegular';
+}
+
+header #iniciar_sesion .password {
+    float: left;
+    padding-right: 15px;
+}
+
+header #iniciar_sesion input[type="password"] {
+    width: 178px;
+    height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'FuturaLTMediumRegular';
+}
+
+header #iniciar_sesion .submit {
+    float: left;
+}
+
+header #iniciar_sesion input[type="submit"] {
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'FuturaLTMediumRegular';
+}
+
+header #iniciar_sesion a {
+    display: block;
+    float: right;
+    padding-right: 175px;
+    color: #4c4c4c;
+    text-decoration: none;
+    font-size: .9em;
+}
+
+header #iniciar_sesion a:hover {
+    color: #477D1D;
+}
+
+footer {
+    background-color: #345a18;
+    color: #FFF;
+    font-size: .9em;
+    height: 80px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #477D1D;
+    border: none;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+#footer {
+    margin: 0em 9em;
+}
+
+#footer #copyright_footer{
+    float: left;
+    margin: 1.2em 0em;
+    width: 50%;
+}
+
+#footer #menu_footer{
+    float: left;
+    margin: 2.2em 0em;
+    width: 50%;
+}
+
+#footer #menu_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#footer #menu_footer ul li {
+    border-right: 1px solid white;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#footer #menu_footer ul li:last-child{
+    border: none;
+}
+
+#footer #menu_footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer #menu_footer ul li a:hover {
+    text-decoration: underline;
+}

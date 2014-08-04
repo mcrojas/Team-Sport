@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bienvenido a Team Sports World</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/home.css">
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <figure>
+                    <img src="images/logo-teamsport.png" />
+                </figure>
+                <!-- FORMULARIO DE INICIO DE SESION -->
+                <div id="iniciar_sesion">
+                    <form id="inicio_sesion" action="" method="post">
+                        <div class="email">
+                            <input type="email" name="email" placeholder="Correo" />
+                        </div>
+                        <div class="password">
+                            <input type="password" name="password" placeholder="Contraseña" />
+                        </div>
+                        <div class="submit">
+                            <input type="submit" name="enviar" value="Entrar" />
+                        </div>
+                        <a href="#">¿Has olvidado tu contraseña?</a>
+                    </form>
+                </div>
+            </div>
+        </header>
+        
+        <section id="contenedor_ppal">
+            <section id="contenido_ppal">
+                <section id="bienvenida">
+                    <h1>Bienvenido a Team Sports World</h1>
+                    <div class="contenido_bienvenida">
+                        ¿Te gustaría saber o planear tu evolución deportiva? <br />Planeas tus objetivos, descubre como mejorar tu rendimiento, evitar lesiones, planifica tu temporada, prepara tu dieta alimenticia, controla tus gastos, hazte visible para los sponsors y universidades.
+                    </div>
+                    <div class="video_bienvenida">
+                        <iframe width="608" height="358" src="//www.youtube.com/embed/rzz-NxGpQh4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </section>
+                <section id="registrate">
+                    <span class="registrate">Regístrate</span><span class="gratuitamente">Gratuitamente</span>
+                    <!-- FORMULARIO DE REGISTRO -->
+                    <div id="caja_registro">
+                        <form id="registro" action="" method="post">
+                            <div class="campo email">
+                                <label>Correo electrónico</label>
+                                <input type="email" name="email" required />
+                            </div>
+                            <div class="campo password">
+                                <label>Contraseña</label>
+                                <input type="password" name="password" required />
+                            </div>
+                            <div class="campo reppassword">
+                                <label>Repite contraseña</label>
+                                <input type="password" name="repassword" required />
+                            </div>
+                            <div class="campo rol">
+                                <label>Tu rol</label>
+                                <select>
+                                    <option value="0">Seleccione...</option>
+                                    <option value="1">Player</option>
+                                    <option value="2">Trainer</option>
+                                    <option value="3">Academy</option>
+                                </select>
+                            </div>
+                            <div class="campo submit">
+                                <input type="submit" name="registrate" value="Regístrate" />
+                            </div>
+                            <span class="terminos_condiciones">Al hacer clic en REGÍSTRATE, aceptas las condiciones y que has leído la <a href="#">Política de Uso de Datos</a>, incluido el <a href="#">Uso de Cookies</a></span>
+                        </form>
+                    </div>
+                </section>
+            </section>
+        </section>
+        
+        <footer>
+            <div id="footer">
+                <div id="copyright_footer">
+                    <p>2014 - Team Sports World</p>
+                </div>
+                <div id="menu_footer">
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
