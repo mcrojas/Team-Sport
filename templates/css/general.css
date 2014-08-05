@@ -1,11 +1,12 @@
 @font-face {
-    font-family: 'FuturaLtBTLight';
-    src: url('../fonts/futurabt-light.eot');
-    src: url('../fonts/futurabt-light.eot') format('embedded-opentype'),
-         url('../fonts/futurabt-light.woff') format('woff'),
-         url('../fonts/futurabt-light.ttf') format('truetype'),
-         url('../fonts/futurabt-light.svg#FuturaLtBTLight') format('svg');
+    font-family: 'FuturaLTLightRegular';
+    src: url('../fonts/futuraltlight.eot');
+    src: url('../fonts/futuraltlight.eot') format('embedded-opentype'),
+         url('../fonts/futuraltlight.woff') format('woff'),
+         url('../fonts/futuraltlight.ttf') format('truetype'),
+         url('../fonts/futuraltlight.svg#FuturaLTLightRegular') format('svg');
 }
+
 
 @font-face {
     font-family: 'FuturaLTMediumRegular';
@@ -21,6 +22,7 @@ body {
     padding: 0;
     font-size: 16px;
     font-family: 'FuturaLTMediumRegular';
+    background-color: #345a18;
 }
 
 header {
@@ -42,13 +44,23 @@ header figure  img{
 }
 
 #header {
-    margin: 0em 8em;
+    /*margin: 0em 8em;*/
+    width: 1100px;
+    height: 86px;
+    position: relative;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -547px;
 }
 
 header #iniciar_sesion {
-    margin: 1.4em 0em;
+    margin-top: 1.5em;
     width: 50%;
     float: left;
+}
+
+header #inicio_sesion {
+    padding-left: 71px;
 }
 
 header #iniciar_sesion .email {
@@ -58,20 +70,21 @@ header #iniciar_sesion .email {
 
 header #iniciar_sesion input[type="email"] {
     width: 178px;
-    height: 25px;
+    height: 30px;
     text-align: center;
     text-transform: uppercase;
     font-family: 'FuturaLTMediumRegular';
+    color: #4c4c4c;
 }
 
 header #iniciar_sesion .password {
     float: left;
-    padding-right: 15px;
+    padding-right: 10px;
 }
 
 header #iniciar_sesion input[type="password"] {
     width: 178px;
-    height: 25px;
+    height: 30px;
     text-align: center;
     text-transform: uppercase;
     font-family: 'FuturaLTMediumRegular';
@@ -83,7 +96,7 @@ header #iniciar_sesion .submit {
 
 header #iniciar_sesion input[type="submit"] {
     width: 90px;
-    height: 30px;
+    height: 35px;
     text-align: center;
     text-transform: uppercase;
     font-family: 'FuturaLTMediumRegular';
@@ -92,10 +105,12 @@ header #iniciar_sesion input[type="submit"] {
 header #iniciar_sesion a {
     display: block;
     float: right;
-    padding-right: 175px;
+    padding-right: 110px;
+    padding-top: 2px;
     color: #4c4c4c;
     text-decoration: none;
     font-size: .9em;
+    font-family: 'FuturaLTLightRegular';
 }
 
 header #iniciar_sesion a:hover {
@@ -118,18 +133,30 @@ input[type="submit"] {
 }
 
 #footer {
-    margin: 0em 9em;
+    /*margin: 0em 9.9em;*/
+    font-size: .9em;
+    position: relative;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -547px;
+    width: 1100px;
 }
 
 #footer #copyright_footer{
     float: left;
-    margin: 1.2em 0em;
+    margin: 2.45em 0em;
     width: 50%;
+}
+
+#footer #copyright_footer p {
+    margin: 0;
+    padding: 0;
+    padding-left: 22px;
 }
 
 #footer #menu_footer{
     float: left;
-    margin: 2.2em 0em;
+    margin: 2.45em 0em;
     width: 50%;
 }
 
@@ -137,6 +164,7 @@ input[type="submit"] {
     margin: 0;
     padding: 0;
     list-style: none;
+    padding-left: 245px;
 }
 
 #footer #menu_footer ul li {
