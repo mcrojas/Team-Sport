@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team Sports World - Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/flexnav.css">
+        <link rel="stylesheet" href="css/jcarousel.responsive.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/dashboard.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.jcarousel.min.js"></script>
+        <script src="js/jquery.flexnav.min.js"></script>
+        <script src="js/jcarousel.responsive.js"></script>
+        <script src="js/general.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <figure>
+                    <a href="#">
+                        <img title="Ir a Home" src="images/logo-teamsport.png" />
+                    </a>
+                </figure>
+                <div id="usuario_enlinea">
+                    <div id="datosenlinea">
+                        <div id="img_usuario">
+                            <img title="Ana María Perez" src="../users/ana-perez.jpg" />
+                        </div>
+                        <div id="nombre_usuario">
+                            <span class="nombre_usuario">Ana María Perez</span>
+                            <div class="datosenlinea-icon"><a href="#">▼</a></div>
+                        </div>
+                    </div>
+                    <div id="herramientas">
+                        <div class="ver ver-mail">
+                            <a href="#"><img title="Ver mail" src="images/mail.jpg" /></a>
+                        </div>
+                        <div class="ver ver-notificaciones">
+                            <a href="#"><img title="Ver notificaciones" src="images/notification.jpg" /></a>
+                        </div>
+                        <div class="ver ver-noticias">
+                            <a href="#"><img title="Ver noticias" src="images/news.jpg" /></a>
+                        </div>
+                        <div class="ver ver-compartir">
+                            <a href="#"><img title="Ver compartir" src="images/network.jpg" /></a>
+                        </div>
+                        <div class="ver ver-tienda">
+                            <a href="#"><img title="Ver tienda" src="images/shop.jpg" /></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MENU MOVIL -->
+                <div id="menu-movil">
+                    <div class="menu-button">
+                        <img src="images/nav-menu-mobile.jpg" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <nav>
+            <!-- HERRAMIENTAS MOVIL -->
+            <div id="herramientas-bg">
+                <div id="herramientas">
+                    <div id="ver-mail" class="herramientas ver-mail">
+                        <a href="#"><img title="Ver mail" src="images/mail-white.png" /></a>
+                    </div>
+                    <div id="ver-notificaciones" class="herramientas ver-notificaciones">
+                        <a href="#"><img title="Ver notificaciones" src="images/notification-white.png" /></a>
+                    </div>
+                    <div id="ver-noticias" class="herramientas ver-noticias">
+                        <a href="#"><img title="Ver noticias" src="images/news-white.png" /></a>
+                    </div>
+                    <div id="ver-compartir" class="herramientas ver-compartir">
+                        <a href="#"><img title="Ver compartir" src="images/network-white.png" /></a>
+                    </div>
+                    <div id="ver-tienda" class="herramientas ver-tienda">
+                        <a href="#"><img title="Ver tienda" src="images/shop-white.png" /></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="nav">
+                <div id="nav-movil">
+                    <div class="nav-movil">
+                        <ul data-breakpoint="800" class="flexnav">
+                            <li class="dashboard"><a href="#">Dashboard</a></li>
+                            <li class="my-records"><a href="#">My Records</a>
+                                <ul id="my-records-menu">
+                                    <li><a href="#"><div class="img-menu"><img src="images/my-performance.png" /></div><span>My Performance</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/tournaments-competitions.png" /></div><span>Tournaments & Competitions</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/my-sponsors.png" /></div><span>My sponsors & Donors</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/my-video.png" /></div><span>My Videos</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/my-playlist.png" /></div><span>My Playlist</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/my-equipments.png" /></div><span>My Equipment</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/my-expenses.png" /></div><span>My Expenses</span></a></li>
+                                </ul>
+                                <span class="touch-button"><i class="navicon">▼</i></span>
+                            </li>
+                            <li class="sport-control"><a href="#">Sport Control</a>
+                                <ul id="sport-control-menu">
+                                    <li><a href="#"><div class="img-menu"><img src="images/physical-trainings.png" /></div><span>Physical Trainings</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/skill-trainings.png" /></div><span>Skill Trainings</a></span></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/coaching.png" /></div><span>Coaching</a></span></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/nutrition.png" /></div><span>Nutrition</a></span></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/physotherapy.png" /></div><span>Physotherapy</a></span></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/academy.png" /></div><span>Academy</a></span></li>
+                                </ul>
+                                <span class="touch-button"><i class="navicon">▼</i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- CAJA HERRAMIENTA PERFIL USUARIO -->
+        <section id="contenido-usuarioenlinea">
+            <div id="ver-usuarioenlinea">
+                <ul class="ver-usuarioenlinea">
+                    <li><a href="#">Edit Profile</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Report a problem</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- CAJA HERRAMIENTAS MOVIL -->
+        <section id="contenido-herramientas">
+            <!-- VER MAIL -->
+            <section id="ver-mail-cont">
+                <div id="ver-mail-ppal"><span class="ver-mail-title"><a href="#">Inbox</a></span><span class="ver-mail-send-message"><a href="#">Send New Message</a></span></div>
+                <div id="ver-mail-list">
+                    <article class="ver-mail-users">
+                        <a href="#">
+                            <div class="ver-mail-info-user">
+                                <div class="ver-mail-img"><img src="../users/manuel-loero.jpg" /></div>
+                                <div class="ver-mail-name">Manuel Loero <span class="ver-mail-type">(Player)</span></div>
+                                <div class="ver-mail-message">Hola! Cómo te fue en el partido contra Andrés?</div>
+                            </div>
+                        </a>
+                        <div class="ver-mail-archive-reply">
+                            <button class="ver-mail-archive" type="button">Archivo</button>
+                            <button class="ver-mail-reply" type="button">Reply</button>
+                        </div>
+                    </article>
+                    <article class="ver-mail-users">
+                        <a href="#">
+                            <div class="ver-mail-info-user">
+                                <div class="ver-mail-img"><img src="../users/andres-herrera.jpg" /></div>
+                                <div class="ver-mail-name">Andrés Herrera <span class="ver-mail-type">(Player)</span></div>
+                                <div class="ver-mail-message">Éxito en el encuentro de hoy amigo.</div>
+                            </div>
+                        </a>
+                        <div class="ver-mail-archive-reply">
+                            <button class="ver-mail-archive" type="button">Archivo</button>
+                            <button class="ver-mail-reply" type="button">Reply</button>
+                        </div>
+                    </article>
+                    <article class="ver-mail-users">
+                        <a href="#">
+                            <div class="ver-mail-info-user">
+                                <div class="ver-mail-img"><img src="../users/pedro-palacios.jpg" /></div>
+                                <div class="ver-mail-name">Pedro Palacios <span class="ver-mail-type">(Player)</span></div>
+                                <div class="ver-mail-message">¿De que academia eres, amigo?</div>
+                            </div>
+                        </a>
+                        <div class="ver-mail-archive-reply">
+                            <button class="ver-mail-archive" type="button">Archivo</button>
+                            <button class="ver-mail-reply" type="button">Reply</button>
+                        </div>
+                    </article>
+                    <article class="ver-mail-users">
+                        <a href="#">
+                            <div class="ver-mail-info-user">
+                                <div class="ver-mail-img"><img src="../users/loredana-assandria.jpg" /></div>
+                                <div class="ver-mail-name">Loredana Assandria <span class="ver-mail-type">(Player)</span></div>
+                                <div class="ver-mail-message">Hola! Luego del entrenamiento vamos al cine...</div>
+                            </div>
+                        </a>
+                        <div class="ver-mail-archive-reply">
+                            <button class="ver-mail-archive" type="button">Archivo</button>
+                            <button class="ver-mail-reply" type="button">Reply</button>
+                        </div>
+                    </article>
+                </div>
+                <div id="ver-mail-all"><a href="#">See all</a></div>
+            </section>
+            
+            <!-- VER NOTIFICACIONES -->
+            <section id="ver-notificaciones-cont">
+                <div id="ver-notificaciones-ppal"><span class="ver-notificaciones-title"><a href="#">Notifications</a></span><span class="ver-notificaciones-mark-read"><a href="#">Mark as Read</a></span><span class="ver-notificaciones-settings"><a href="#">Settings</a></span></div>
+                <div id="ver-notificaciones-list">
+                    <article class="ver-notificaciones-users">
+                        <a href="#">
+                            <div class="ver-notificaciones-info-user">
+                                <div class="ver-notificaciones-img"><img src="../users/manuel-loero.jpg" /></div>
+                                <div class="ver-notificaciones-name">Manuel Loero <span class="ver-notificaciones-nota">ha agregado nuevas rutinas de ejercicios.</span></div>
+                                <div class="ver-notificaciones-type">Entrenamiento <span class="ver-notificaciones-cantidad">(2)</span></div>
+                            </div>
+                        </a>
+                        <div class="ver-notificaciones-check-uncheck">
+                            <div class="ver-notificaciones-check"><a href="#"><img src="images/check.png" /></a></div>
+                            <div class="ver-notificaciones-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                        </div>
+                        <div class="ver-notificaciones-date">May 2014</div>
+                    </article>
+                    <article class="ver-notificaciones-users">
+                        <a href="#">
+                            <div class="ver-notificaciones-info-user">
+                                <div class="ver-notificaciones-img"><img src="../users/andres-herrera.jpg" /></div>
+                                <div class="ver-notificaciones-name">Andrés Herrera <span class="ver-notificaciones-nota">ha agregado nuevas imagenes a su album de ejercicios.</span></div>
+                                <div class="ver-notificaciones-type">Ejercicios <span class="ver-notificaciones-cantidad">(5)</span></div>
+                            </div>
+                        </a>
+                        <div class="ver-notificaciones-check-uncheck">
+                            <div class="ver-notificaciones-check"><a href="#"><img src="images/check.png" /></a></div>
+                            <div class="ver-notificaciones-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                        </div>
+                        <div class="ver-notificaciones-date">Apr 2014</div>
+                    </article>
+                    <article class="ver-notificaciones-users">
+                        <a href="#">
+                            <div class="ver-notificaciones-info-user">
+                                <div class="ver-notificaciones-img"><img src="../users/pedro-palacios.jpg" /></div>
+                                <div class="ver-notificaciones-name">Pedro Palacios <span class="ver-notificaciones-nota">ha agregado nuevos amigos.</span></div>
+                                <div class="ver-notificaciones-type">Amigos(as) <span class="ver-notificaciones-cantidad">(5)</span></div>
+                            </div>
+                        </a>
+                        <div class="ver-notificaciones-check-uncheck">
+                            <div class="ver-notificaciones-check"><a href="#"><img src="images/check.png" /></a></div>
+                            <div class="ver-notificaciones-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                        </div>
+                        <div class="ver-notificaciones-date">Jun 2014</div>
+                    </article>
+                    <article class="ver-notificaciones-users">
+                        <a href="#">
+                            <div class="ver-notificaciones-info-user">
+                                <div class="ver-notificaciones-img"><img src="../users/loredana-assandria.jpg" /></div>
+                                <div class="ver-notificaciones-name">Loredana Assandria <span class="ver-notificaciones-nota">ha agregado una nota sobre salud.</span></div>
+                                <div class="ver-notificaciones-type">Salud <span class="ver-notificaciones-cantidad">(1)</span></div>
+                            </div>
+                        </a>
+                        <div class="ver-notificaciones-check-uncheck">
+                            <div class="ver-notificaciones-check"><a href="#"><img src="images/check.png" /></a></div>
+                            <div class="ver-notificaciones-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                        </div>
+                        <div class="ver-notificaciones-date">Apr 2014</div>
+                    </article>
+                </div>
+                <div id="ver-notificaciones-all"><a href="#">See all</a></div>
+            </section>
+            
+            <!-- VER SHOP -->
+            <section id="ver-shop-cont">
+                <div id="ver-shop-ppal"><span class="ver-shop-title"><a href="#">Shop Notifications</a></span><span class="ver-shop-settings"><a href="#">Settings</a></span></div>
+                <div id="ver-shop-list">
+                    <article class="ver-shop-users">
+                        <a href="#">
+                            <div class="ver-shop-info-user">
+                                <div class="ver-shop-img"><img src="../users/manuel-loero.jpg" /></div>
+                                <div class="ver-shop-name-product">Nike Lunar Ballistec<span class="ver-shop-type-product">Men's Tennis Shoes</span></div>
+                                <div class="ver-shop-price">$165</div>
+                            </div>
+                        </a>
+                        <div class="ver-shop-check-uncheck">
+                            <div class="ver-shop-check"><a href="#"><img src="images/check.png" /></a></div>
+                            <div class="ver-shop-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                        </div>
+                        <div class="ver-shop-category">Men Shoes<span class="ver-shop-category-n">(12)</span></div>
+                        <div class="ver-shop-date">May 2014</div>
+                    </article>
+                    <article class="ver-shop-users">
+                        <a href="#">
+                            <div class="ver-shop-info-user">
+                                <div class="ver-shop-img"><img src="../users/andres-herrera.jpg" /></div>
+                                <div class="ver-shop-name-product">Puma Lunar Ballistec<span class="ver-shop-type-product">Men's Tennis Shoes</span></div>
+                                <div class="ver-shop-price">$185</div>
+                            </div>
+                        </a>
+                        <div class="ver-shop-check-uncheck">
+                            <div class="ver-shop-check"><a href="#"><img src="images/check.png" /></a></div>
+                            <div class="ver-shop-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                        </div>
+                        <div class="ver-shop-category">Men Shoes<span class="ver-shop-category-n">(12)</span></div>
+                        <div class="ver-shop-date">Feb 2014</div>
+                    </article>
+                    <article class="ver-shop-users">
+                        <a href="#">
+                            <div class="ver-shop-info-user">
+                                <div class="ver-shop-img"><img src="../users/pedro-palacios.jpg" /></div>
+                                <div class="ver-shop-name-product">Nike Lunar Ballistec<span class="ver-shop-type-product">Men's Tennis Shoes</span></div>
+                                <div class="ver-shop-price">$165</div>
+                            </div>
+                        </a>
+                        <div class="ver-shop-check-uncheck">
+                            <div class="ver-shop-check"><a href="#"><img src="images/check.png" /></a></div>
+                            <div class="ver-shop-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                        </div>
+                        <div class="ver-shop-category">Men Clothes<span class="ver-shop-category-n">(10)</span></div>
+                        <div class="ver-shop-date">Jan 2014</div>
+                    </article>
+                    <article class="ver-shop-users">
+                        <a href="#">
+                            <div class="ver-shop-info-user">
+                                <div class="ver-shop-img"><img src="../users/loredana-assandria.jpg" /></div>
+                                <div class="ver-shop-name-product">Nike Lunar Ballistec<span class="ver-shop-type-product">Men's Tennis Shoes</span></div>
+                                <div class="ver-shop-price">$165</div>
+                            </div>
+                        </a>
+                        <div class="ver-shop-check-uncheck">
+                            <div class="ver-shop-check"><a href="#"><img src="images/check.png" /></a></div>
+                            <div class="ver-shop-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                        </div>
+                        <div class="ver-shop-cat-date">
+                            <div class="ver-shop-category">Women Shoes<span class="ver-shop-category-n">(5)</span></div>
+                            <div class="ver-shop-date">Jun 2014</div>
+                        </div>
+                    </article>
+                </div>
+                <div id="ver-shop-friends-wish">
+                    <div class="ver-shop-friends"><img src="images/friends.png" /><span><a href="#">Friends Gifting</a></span></div>
+                    <div class="ver-shop-wish"><img src="images/wish.png" /><span><a href="#">Wish List</a></span></div>
+                </div>
+                <div id="ver-shop-all"><a href="#">See all</a></div>
+            </section>
+        </section>
+        
+        <section id="contenedor_ppal">
+            <section id="contenido_ppal">
+                <!-- CAJA DATOS PERSONALES -->
+                <section id="datos_personales">
+                    <div id="img_usuario">
+                        <img title="Ana María Perez" src="../users/ana-perez.jpg" />
+                    </div>
+                    <div id="nombre_usuario">
+                        Ana María Perez Uzcátegui
+                    </div>
+                    <div id="informacion_ppal">
+                        <div class="informacion_ppal"><span class="titulo_edad">Age: </span><span class="edad">16</span></div>
+                        <div class="informacion_ppal"><span class="titulo_ciudad">City: </span><span class="ciudad">Burgos</span></div>
+                        <div class="informacion_ppal"><span class="mts">1.60m</span> <span class="peso">50Kg</span></div>
+                        <div class="informacion_ppal"><span class="titulo_tipomano">Diestro</span></div>
+                        <div class="informacion_ppal"><span class="titulo_especialidad">Speciality: </span><span class="especialidad">Revés a dos manos</span></div>
+                    </div>
+                    <div id="informacion_secundaria">
+                        <div class="informacion_secundaria"><span class="titulo_clubdeporte">Sport Specialist Asigned Sponsors:</span></div>
+                        <div class="informacion_secundaria"><span class="titulo_club">Club:</span> <span class="club">TenisPower</span></div>
+                        <div class="informacion_secundaria"><span class="titulo_rankingactual">Ranking Actual:</span> <span class="rankingactual">ATP 3001 ITF 5001 Nacional 54</span></div>
+                        <div class="informacion_secundaria"><span class="titulo_mejorranking">Ranking Actual:</span> <span class="mejorranking">ATP 3501 ITF 5001 Nacional 22</span></div>
+                        <div class="informacion_secundaria"><span class="titulo_idol">Idol:</span> <span class="idol">Rafael Nadal</span></div>
+                        <div class="informacion_secundaria"><span class="titulo_dream">Dream:</span> <span class="dream">Win Roland Garros</span></div>
+                        <div class="informacion_secundaria"><span class="titulo_facebook">Facebook:</span> <span class="facebook"><a href="#">Página de Ana María Perez</a></span></div>
+                        <div class="informacion_secundaria"><span class="titulo_twitter">Twitter:</span> <span class="twitter"><a href="#">Cuenta de Ana María Perez</a></span></div>
+                    </div>
+                </section>
+                
+                <!-- CAJA RECORD BOOK -->
+                <section id="record_book">
+                    <div class="titulo_record_book">Record Book</div>
+                    <div id="record_book_years">
+                        <div class="year">2010</div>
+                        <div class="list_year">
+                            <div class="year-2010">Campeón de España Cadete.</div>
+                        </div>
+                        <div class="year">2009</div>
+                        <div class="list_year">
+                            <div class="year-2009">Campeón Sub-15, Cartagena.</div>
+                            <div class="year-2009">Campeón Marca, Valladolid.</div>
+                            <div class="year-2009">Campeón Marca, Alicante.</div>
+                            <div class="year-2009">Campeón Marca, Madrid.</div>
+                            <div class="year-2009">Campeón Sanxenxo ITF</div>
+                            <div class="year-2009">Campeón dobles ITF, Sanxenxo.</div>
+                        </div>
+                        <div class="year">2008</div>
+                        <div class="list_year">
+                            <div class="year-2008">Campeón de España Infantil.</div>
+                            <div class="year-2008">Campeón Nike, Valladolid.</div>
+                            <div class="year-2008">Campeón Nike, Valencia.</div>
+                            <div class="year-2008">Campeón doble ITF, Nantes.</div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- CAJA TEAM SPORT NETWORK -->
+                <section id="team_sport_network">
+                    <div class="titulo_team_sport_network">Team Sport Network</div>
+                    <section id="list-teamsport">
+                        <article class="user-teamsport">
+                            <a href="#">
+                                <div class="img-teamsport"><img title="Pedro Palacios" src="../users/pedro-palacios.jpg" /></div>
+                                <div class="info-teamsport">
+                                    <div class="name-teamsport">Pedro Palacios García</div>
+                                    <div class="description-teamsport">Lorem ipsum dolor sit</div>
+                                    <div class="age-teamsport">25 años</div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="user-teamsport">
+                            <a href="#">
+                                <div class="img-teamsport"><img title="Andrés Herrera Pinzón" src="../users/andres-herrera.jpg" /></div>
+                                <div class="info-teamsport">
+                                    <div class="name-teamsport">Andrés Herrera Pinzón</div>
+                                    <div class="description-teamsport">Lorem ipsum dolor sit</div>
+                                    <div class="age-teamsport">27 años</div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="user-teamsport">
+                            <a href="#">
+                                <div class="img-teamsport"><img title="Loredana Assandria Elsen" src="../users/loredana-assandria.jpg" /></div>
+                                <div class="info-teamsport">
+                                    <div class="name-teamsport">Loredana Assandria Elsen</div>
+                                    <div class="description-teamsport">Lorem ipsum dolor sit</div>
+                                    <div class="age-teamsport">30 años</div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="user-teamsport">
+                            <a href="#">
+                                <div class="img-teamsport"><img title="Manuel Loero Fernandez" src="../users/manuel-loero.jpg" /></div>
+                                <div class="info-teamsport">
+                                    <div class="name-teamsport">Manuel Loero Fernandez</div>
+                                    <div class="description-teamsport">Lorem ipsum dolor sit</div>
+                                    <div class="age-teamsport">19 años</div>
+                                </div>
+                            </a>
+                        </article>
+                    </section>
+                </section>
+                
+                <!-- CAJA EVENTOS-->
+                <section id="events">
+                    <div id="tabs-events">
+                        <ul>
+                          <li><a href="#tabs-1">Events</a></li>
+                          <li><a href="#tabs-2">My Events</a></li>
+                          <li><a href="#tabs-3">Incomming Events</a></li>
+                          <li><a href="#tabs-4">Past Events</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <div id="event">
+                                <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                            </div>
+                        </div>
+                        <div id="tabs-2">
+                            <div id="my-events">
+                                <div id="my-events-img"><img src="images/my-events.png" /></div>
+                                <article class="my-events-article">
+                                    <div class="my-events-left">
+                                        <div class="my-events-date">15 ene</div>
+                                        <div class="my-events-type cancelled">Cancelled</div>
+                                    </div>
+                                    <div class="my-events-right">
+                                        <div class="my-events-title">US Open</div>
+                                        <div class="my-events-description">Lorem ipsum dolor sit amet consecuter, lorem ipsum dolor sit...</div>
+                                    </div>
+                                </article>
+                                <article class="my-events-article">
+                                    <div class="my-events-left">
+                                        <div class="my-events-date">23 may</div>
+                                        <div class="my-events-type register">Register</div>
+                                    </div>
+                                    <div class="my-events-right">
+                                        <div class="my-events-title">US Open II</div>
+                                        <div class="my-events-description">Lorem ipsum dolor sit amet consecuter, lorem ipsum dolor sit...</div>
+                                    </div>
+                                </article>
+                                <article class="my-events-article">
+                                    <div class="my-events-left">
+                                        <div class="my-events-date">23 jun</div>
+                                        <div class="my-events-type closed">Closed</div>
+                                    </div>
+                                    <div class="my-events-right">
+                                        <div class="my-events-title">US Open III</div>
+                                        <div class="my-events-description">Lorem ipsum dolor sit amet consecuter, lorem ipsum dolor sit...</div>
+                                    </div>
+                                </article>
+                                <article class="my-events-article">
+                                    <div class="my-events-left">
+                                        <div class="my-events-date">23 Nov</div>
+                                        <div class="my-events-type register">Register</div>
+                                    </div>
+                                    <div class="my-events-right">
+                                        <div class="my-events-title">US Open IV</div>
+                                        <div class="my-events-description">Lorem ipsum dolor sit amet consecuter, lorem ipsum dolor sit...</div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div id="tabs-3">
+                            <div id="incomming-events">
+                                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                            </div>
+                        </div>
+                        <div id="tabs-4">
+                            <div id="past-events">
+                                <p>Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                
+                <!-- CAJA SHOP -->
+                <section id="shop">
+                    <div class="titulo_shop">Shop</div>
+                        <div class="jcarousel-wrapper">
+                            <div class="pagination">
+                                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                            </div>
+                            <div class="jcarousel">
+                                <ul>
+                                    <li>
+                                        <article class="shop-article">
+                                            <a href="#">
+                                                <div class="shop-img"><img src="../images/shop/shoes.jpg" /></div>
+                                                <div class="shop-content">
+                                                    <span class="shop-content-title">Head Modelo #4625</span>
+                                                    <div class="shop-content-title-bg"></div>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="shop-article">
+                                            <a href="#">
+                                                <div class="shop-img"><img src="../images/shop/shoes.jpg" /></div>
+                                                <div class="shop-content">
+                                                    <span class="shop-content-title">Head Modelo #4885</span>
+                                                    <div class="shop-content-title-bg"></div>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="shop-article">
+                                            <a href="#">
+                                                <div class="shop-img"><img src="../images/shop/shoes.jpg" /></div>
+                                                <div class="shop-content">
+                                                    <span class="shop-content-title">Head Modelo #4110</span>
+                                                    <div class="shop-content-title-bg"></div>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </section>
+                
+                <!-- CAJA BUSCADOR -->
+                <section id="search">
+                    <form id="search-form" action="" method="post">
+                        <div class="search-input">
+                            <img src="images/search.png" />
+                            <div class="search">
+                                <input type="search" name="search" placeholder="¿Qué estás buscando?" />
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                
+                <!-- CAJA PERFORMANCE-->
+                <section id="performance">
+                    <div class="titulo_performance">Performance</div>
+                    <div class="graficas"><img src="../images/graficos.jpg" /></div>
+                </section>
+                
+                <!-- CAJA TOURNAMENTS -->
+                <section id="tournaments">
+                    <div class="titulo_tournaments">Tournaments</div>
+                    <div id="list-tournament">
+                        <article class="tournament">
+                            <a href="#">
+                                <div class="img-tournament">
+                                    <img src="images/tournament.jpg" />
+                                </div>
+                                <div class="description-tournament">
+                                    Lorem ipsum dolor sit, lorem ipsum dolor sit
+                                </div>
+                            </a>
+                        </article>
+                        <article class="tournament">
+                            <a href="#">
+                                <div class="img-tournament">
+                                    <img src="images/tournament.jpg" />
+                                </div>
+                                <div class="description-tournament">
+                                    Lorem ipsum dolor sit, lorem ipsum dolor sit
+                                </div>
+                            </a>
+                        </article>
+                        <article class="tournament">
+                            <a href="#">
+                                <div class="img-tournament">
+                                    <img src="images/tournament.jpg" />
+                                </div>
+                                <div class="description-tournament">
+                                    Lorem ipsum dolor sit, lorem ipsum dolor sit
+                                </div>
+                            </a>
+                        </article>
+                        <article class="tournament">
+                            <a href="#">
+                                <div class="img-tournament">
+                                    <img src="images/tournament.jpg" />
+                                </div>
+                                <div class="description-tournament">
+                                    Lorem ipsum dolor sit, lorem ipsum dolor sit
+                                </div>
+                            </a>
+                        </article>
+                        <article class="tournament">
+                            <a href="#">
+                                <div class="img-tournament">
+                                    <img src="images/tournament.jpg" />
+                                </div>
+                                <div class="description-tournament">
+                                    Lorem ipsum dolor sit, lorem ipsum dolor sit
+                                </div>
+                            </a>
+                        </article>
+                        <article class="tournament">
+                            <a href="#">
+                                <div class="img-tournament">
+                                    <img src="images/tournament.jpg" />
+                                </div>
+                                <div class="description-tournament">
+                                    Lorem ipsum dolor sit, lorem ipsum dolor sit
+                                </div>
+                            </a>
+                        </article>
+                        <article class="tournament">
+                            <a href="#">
+                                <div class="img-tournament">
+                                    <img src="images/tournament.jpg" />
+                                </div>
+                                <div class="description-tournament">
+                                    Lorem ipsum dolor sit, lorem ipsum dolor sit
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- CAJA PUBLICIDAD BANNERS BOTTOM -->
+                <section id="banners-bottoms">
+                    <img src="../banners/publicidad-bottom.jpg" />
+                </section>
+                
+            </section>
+        </section>
+        
+        <footer>
+            <div id="footer">
+                <div id="copyright_footer">
+                    <p>2014 - Team Sports World</p>
+                </div>
+                <div id="menu_footer">
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

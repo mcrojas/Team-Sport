@@ -1,130 +1,354 @@
-#contenedor_ppal{
-    background-image: url('../images/bg-home.jpg');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-}
-
-#contenido_ppal{
-    /*height: 716px;*/
-    height: 570px;
-    width: 1056px;
-    margin: 0em 8em;
-    background: rgba(0,0,0,0.3);
-    padding-left: 22px;
-    padding-right: 22px;
-    padding-top: 30px;
+/* Para Movil */
+@media screen and (min-width: 300px){
+    header{
+        position: inherit;
+    }
     
-    position: relative;
-    left: 50%;
-    top: 50%;
-    margin-top: 0px;
-    margin-left: -547px;
+    #contenedor_ppal{
+        background-image: url('../images/bg-home-mobile.jpg');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    
+    #contenido_ppal{
+        background: rgba(0,0,0,0.3);
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    
+    #contenido_ppal #bienvenida {
+        color: white;
+        float: left;
+    }
+    
+    #contenido_ppal #bienvenida h1 {
+        font-size: 1.4em;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #contenido_ppal #bienvenida .contenido_bienvenida {
+        font-size: 1.2em;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: none;
+    }
+    
+    #contenido_ppal #bienvenida .video_bienvenida{
+        display: none;
+    }
+    
+    #contenido_ppal #registrate {
+        float: right;
+    }
+    
+    #contenido_ppal #registrate .registrate {
+        color: white;
+        text-transform: uppercase;
+        display: inherit;
+        font-size: 1.5em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #contenido_ppal #registrate .gratuitamente{
+        color: white;
+        font-size: 1.2em;
+        padding-bottom: 25px;
+        display: block;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #contenido_ppal #registrate #caja_registro {
+        background-color: white;
+        color: #4c4c4c;
+        float: right;
+        padding: 1em 0em;
+        margin: 0em 1em;
+        margin-bottom: 1em;
+    }
+    
+    #contenido_ppal #registrate #caja_registro label{
+        display: inherit;
+        text-transform: uppercase;
+    }
+    
+    #contenido_ppal #registrate #caja_registro .campo {
+        text-align: center;
+    }
+    
+    
+    #contenido_ppal #registrate #caja_registro input[type="email"]{
+        color: #4c4c4c;
+        width: 90%;
+        height: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #contenido_ppal #registrate #caja_registro input[type="password"]{
+        color: #4c4c4c;
+        width: 90%;
+        height: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #contenido_ppal #registrate #caja_registro select{
+        width: 90%;
+        height: 30px;
+        color: #4c4c4c;
+        text-transform: uppercase;
+        font-family: 'FuturaLTMediumRegular';
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    #contenido_ppal #registrate #caja_registro input[type="submit"]{
+        width: 90%;
+        height: 50px;
+        font-size: 1em;
+    }
+    
+    #contenido_ppal #registrate #caja_registro .submit{
+        padding-top: 1em;
+    }
+
+    #contenido_ppal #registrate #caja_registro .terminos_condiciones{
+        padding: 1em 1em;
+        display: block;
+        font-family: 'FuturaLTLightRegular';
+        font-size: .9em;
+    }
+
+    #contenido_ppal #registrate #caja_registro .terminos_condiciones a{
+        color: #477D1D;
+        text-decoration: none;
+    }
+
+    #contenido_ppal #registrate #caja_registro .terminos_condiciones a:hover {
+        text-decoration: underline;
+    }
 }
 
-#contenido_ppal #bienvenida {
-    color: white;
-    width: 50%;
-    float:left;
+@media screen and (min-width: 480px){
+    header figure img {
+        padding: 1em 0em 1em 1em;
+    }
+    
+    #contenido_ppal #bienvenida h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #contenido_ppal #bienvenida .contenido_bienvenida {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #contenido_ppal #registrate .registrate {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #contenido_ppal #registrate .gratuitamente {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #contenido_ppal #registrate #caja_registro {
+        margin: 0em 1.3em;
+        margin-bottom: 1em;
+    }
+    
+    #contenido_ppal #registrate #caja_registro .terminos_condiciones {
+        padding: 1em 1.4em;
+    }
 }
 
-#contenido_ppal #bienvenida h1 {
-    font-size: 1.9em;
-    margin: 0;
-    margin-bottom: 15px;
+/* Para Tablets pequeñas */
+@media screen and (min-width: 600px){
+    #contenido_ppal #bienvenida .contenido_bienvenida {
+        display: block;
+    }
 }
 
-#contenido_ppal #bienvenida .contenido_bienvenida {
-    font-size: 1.2em;
-    padding-bottom: 20px;
-    width: 115%;
+/* Para Tablets grandes */
+@media screen and (min-width: 766px){    
+    #contenido_ppal #bienvenida {
+        width: 50%;
+    }
+    
+    #contenido_ppal #bienvenida h1 {
+        font-size: 1.6em;
+        margin-top: 13px;
+    }
+    
+    #contenido_ppal #bienvenida .video_bienvenida{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px; height: 0; overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #contenido_ppal #registrate {
+        width: 50%;
+        padding-top: 10px;
+    } 
+    
+    #contenido_ppal #registrate .registrate {
+        font-size: 2em;
+    }
+    
+    #contenido_ppal #registrate .gratuitamente {
+        font-size: 1.3em;
+        padding-bottom: 20px;
+    }
+    
+    #contenido_ppal #registrate #caja_registro {
+        padding-bottom: 0em;
+    }
 }
 
-#contenido_ppal #registrate {
-    width: 36%;
-    float: right;
+@media screen and (min-width: 955px){
+    #contenedor_ppal{
+        background-image: url('../images/bg-home.jpg');
+    }
+    
+    #contenido_ppal{
+        display: block;
+        height: 570px;
+        width: 955px;
+        margin: 0em 8em;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 30px;
+
+        position: relative;
+        left: 50%;
+        top: 50%;
+        margin-top: 0px;
+        margin-left: -500px;
+    }
 }
 
-#contenido_ppal #registrate .registrate {
-    color: white;
-    text-transform: uppercase;
-    display: inherit;
-    font-size: 2em;
-}
+/* Para Desktop */
+@media screen and (min-width: 1100px){ 
+    
+    #contenido_ppal{
+        height: 570px;
+        width: 1056px;
+        margin: 0em 8em;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 30px;
 
-#contenido_ppal #registrate .gratuitamente{
-    color: white;
-    font-size: 1.2em;
-    padding-bottom: 25px;
-    display: block;
-}
+        position: relative;
+        left: 50%;
+        top: 50%;
+        margin-top: 0px;
+        margin-left: -547px;
+    }
+    
+    #contenido_ppal #bienvenida h1 {
+        font-size: 1.9em;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    
+    #contenido_ppal #bienvenida .contenido_bienvenida {
+        font-size: 1.2em;
+        padding-bottom: 20px;
+        width: 115%;
+    }
+    
+    #contenido_ppal #bienvenida .video_bienvenida {
+        width: 608px;
+    }
+    
+    #contenido_ppal #registrate {
+        width: 40%;
+        float: right;
+        padding-top: 0px !important;
+    }
 
-#contenido_ppal #registrate #caja_registro {
-    background-color: white;
-    color: #4c4c4c;
-    width: 380px;
-    height: 407px;
-    float: right;
-    padding: 1em 0em;
-}
+    #contenido_ppal #registrate .registrate {
+        font-size: 2em;
+    }
 
-#contenido_ppal #registrate #caja_registro label{
-    display: inherit;
-    text-transform: uppercase;
-}
+    #contenido_ppal #registrate .gratuitamente{
+        font-size: 1.2em;
+        padding-bottom: 25px;
+        display: block;
+    }
+    
+    #contenido_ppal #registrate #caja_registro {
+        width: 380px;
+        height: 422px;
+        float: right;
+        padding: 1em 0em;
+    }
+    
+    #contenido_ppal #registrate #caja_registro input[type="email"]{
+        width: 314px;
+        height: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 
-#contenido_ppal #registrate #caja_registro .campo {
-    text-align: center;
-}
+    #contenido_ppal #registrate #caja_registro input[type="password"]{
+        width: 314px;
+        height: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 
-#contenido_ppal #registrate #caja_registro input[type="email"]{
-    width: 314px;
-    height: 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+    #contenido_ppal #registrate #caja_registro select{
+        width: 314px;
+        height: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 
-#contenido_ppal #registrate #caja_registro input[type="password"]{
-    width: 314px;
-    height: 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+    #contenido_ppal #registrate #caja_registro input[type="submit"]{
+        width: 314px;
+        height: 50px;
+        font-size: 1em;
+    }
 
-#contenido_ppal #registrate #caja_registro select{
-    width: 314px;
-    height: 30px;
-    color: #4c4c4c;
-    text-transform: uppercase;
-    font-family: 'FuturaLTMediumRegular';
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+    #contenido_ppal #registrate #caja_registro .submit{
+        padding-top: 1em;
+    }
 
-#contenido_ppal #registrate #caja_registro input[type="submit"]{
-    width: 314px;
-    height: 50px;
-    font-size: 1em;
-}
-
-#contenido_ppal #registrate #caja_registro .submit{
-    padding-top: 1em;
-}
-
-#contenido_ppal #registrate #caja_registro .terminos_condiciones{
-    padding: 1em 2em;
-    display: block;
-    font-family: 'FuturaLTLightRegular';
-    font-size: .9em;
-}
-
-#contenido_ppal #registrate #caja_registro .terminos_condiciones a{
-    color: #477D1D;
-    text-decoration: none;
-}
-
-#contenido_ppal #registrate #caja_registro .terminos_condiciones a:hover {
-    text-decoration: underline;
+    #contenido_ppal #registrate #caja_registro .terminos_condiciones{
+        padding: 1em 2em;
+        display: block;
+    }
+    
 }
