@@ -1,0 +1,180 @@
+/* Para Movil */
+@media screen and (min-width: 300px){
+    #contenedor_ppal{
+        background-image: url('../images/bg-dashboard-mobile.jpg');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        margin-top: 145px;
+    }
+    
+    #contenido_ppal{
+        background: rgba(0,0,0,0.3);
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 480px){
+    header figure img {
+        padding: 1em 0em 1em 1em;
+    }
+}
+
+@media screen and (min-width: 500px){
+    header figure img {
+        width: 70%;
+    }
+}
+
+/* Para tablets pequeñas */
+@media screen and (min-width: 568px){
+    header figure {
+        width: 50%;
+    }
+
+    header figure img {
+        width: 50%;
+    }
+}
+
+/* Para Tablets pequeñas */
+@media screen and (min-width: 600px){  
+    
+}
+
+/* Para Tablets grandes */
+@media screen and (min-width: 766px){ 
+    
+}
+
+@media screen and (min-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    header {
+        position: inherit;
+    }
+    
+    header figure {
+        width: 40%;
+    }
+    
+    nav{
+        position: inherit;
+    }
+    
+    #contenedor_ppal{
+        margin-top: 60px;
+    }
+    
+    #contenido-herramientas #ver-shop-cont {
+        width: 50%;
+        margin-left: 56%;
+    }
+    
+    #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
+        bottom: 394px;
+        left: 100%;
+    }
+}
+
+@media screen and (min-width: 870px){
+    header #nav-movil {
+        margin-top: -19px;
+    }
+    
+    #contenido-herramientas #ver-notificaciones-cont:before, #contenido-herramientas #ver-notificaciones-cont:after {
+        bottom: 342px;
+        left: 78%;
+    }
+    
+    #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
+        bottom: 394px;
+        left: 97%;
+    }
+}
+
+@media screen and (min-width: 955px){
+    header figure {
+        width: 40%;
+    }
+    
+    #contenedor_ppal{
+        background-image: url('../images/bg-dashboard.jpg');
+        background-size: 2050px auto;
+    }
+    
+    #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
+        bottom: 394px;
+        left: 95%;
+    }
+    
+    #contenido-herramientas #ver-notificaciones-cont:before, #contenido-herramientas #ver-notificaciones-cont:after {
+        bottom: 333px;
+        left: 52%;
+    }
+    
+    #contenido-herramientas #ver-shop-cont {
+        width: 40%;
+    }
+    
+    #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
+        bottom: 345px;
+        left: 90%;
+    }
+}
+
+@media screen and (min-width: 1000px){ 
+    #contenido-herramientas #ver-mail-cont:before, #contenido-herramientas #ver-mail-cont:after {
+        bottom: 333px;
+        left: 37%;
+    }
+    
+    #contenido-herramientas #ver-notificaciones-cont:before, #contenido-herramientas #ver-notificaciones-cont:after {
+        bottom: 333px;
+        left: 48%;
+    }
+    
+    #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
+        bottom: 345px;
+        left: 83%;
+    }
+}
+
+/* Para Desktop */
+@media screen and (min-width: 1100px){ 
+    #contenido_ppal{
+        height: 1335px;
+        width: 1065px;
+        margin: 0em 8em;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+
+        position: relative;
+        left: 50%;
+        top: 50%;
+        margin-top: 0px;
+        margin-left: -547px;
+    }
+    
+    #contenido-herramientas #ver-mail-cont:before, #contenido-herramientas #ver-mail-cont:after {
+        bottom: 333px;
+        left: 46%;
+    }
+    
+    #contenido-herramientas #ver-notificaciones-cont:before, #contenido-herramientas #ver-notificaciones-cont:after {
+        bottom: 333px;
+        left: 55%;
+    }
+    
+    #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
+        bottom: 345px;
+        left: 86%;
+    }
+}

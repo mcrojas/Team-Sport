@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team Sports World - Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/slicknav.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/info.css">
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript" src="js/info.js"></script>
+        <script type="text/javascript" src="js/general.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <figure>
+                    <a href="#">
+                        <img title="Ir a Home" src="images/logo-teamsport.png" />
+                    </a>
+                </figure>
+                <div id="usuario_enlinea">
+                    <div id="herramientas">
+                        <div id="img_usuario">
+                            <img title="Ana María Perez" src="../users/ana-perez.jpg" />
+                        </div>
+                        <div id="nombre_usuario">
+                            <span class="nombre_usuario">Ana María Perez</span>
+                            <div class="datosenlinea-icon"><a href="#">▼</a></div>
+                            
+                            <!-- CAJA HERRAMIENTA PERFIL USUARIO -->
+                            <section id="contenido-usuarioenlinea">
+                                <div id="ver-usuarioenlinea">
+                                    <ul class="ver-usuarioenlinea">
+                                        <li><a href="#">Edit Profile</a></li>
+                                        <li><a href="#">Help</a></li>
+                                        <li><a href="#">Report a problem</a></li>
+                                        <li><a href="#">Log out</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    
+                        <div class="ver ver-mail">
+                            <a href="#"><img title="Ver mail" src="images/mail.jpg" /></a>
+                        </div>
+                        <div class="ver ver-notificaciones">
+                            <a href="#"><img title="Ver notificaciones" src="images/notification.jpg" /></a>
+                        </div>
+                        <div class="ver ver-noticias">
+                            <a href="#"><img title="Ver noticias" src="images/news.jpg" /></a>
+                        </div>
+                        <div class="ver ver-compartir">
+                            <a href="#"><img title="Ver compartir" src="images/network.jpg" /></a>
+                        </div>
+                        <div class="ver ver-tienda">
+                            <a href="#"><img title="Ver tienda" src="images/shop.jpg" /></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MENU MOVIL -->
+                <div id="menu-movil">
+                </div>
+            </div>
+        </header>
+        
+        <nav>
+            <!-- HERRAMIENTAS MOVIL -->
+            <div id="herramientas-bg">
+                <div id="herramientas">
+                    <div id="ver-mail" class="herramientas ver-mail">
+                        <a href="#"><img title="Ver mail" src="images/mail-white.png" /></a>
+                    </div>
+                    <div id="ver-notificaciones" class="herramientas ver-notificaciones">
+                        <a href="#"><img title="Ver notificaciones" src="images/notification-white.png" /></a>
+                    </div>
+                    <div id="ver-noticias" class="herramientas ver-noticias">
+                        <a href="#"><img title="Ver noticias" src="images/news-white.png" /></a>
+                    </div>
+                    <div id="ver-compartir" class="herramientas ver-compartir">
+                        <a href="#"><img title="Ver compartir" src="images/network-white.png" /></a>
+                    </div>
+                    <div id="ver-tienda" class="herramientas ver-tienda">
+                        <a href="#"><img title="Ver tienda" src="images/shop-white.png" /></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="nav">
+                <div id="nav-movil">
+                    <div class="nav-movil">
+                        <ul id="nav-general">
+                            <li class="dashboard"><a href="#">Dashboard</a></li>
+                            <li class="my-records"><a href="#">My Records</a>
+                                <ul id="my-records-menu">
+                                    <li><a href="#"><div class="img-menu"><img src="images/my-performance.png" /></div><span>My Performance</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/tournaments-competitions.png" /></div><span>Tournaments & Competitions</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/my-sponsors.png" /></div><span>My sponsors & Donors</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/my-video.png" /></div><span>My Videos</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/my-playlist.png" /></div><span>My Playlist</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/my-equipments.png" /></div><span>My Equipment</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/my-expenses.png" /></div><span>My Expenses</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="sport-control"><a href="#">Sport Control</a>
+                                <ul id="sport-control-menu">
+                                    <li><a href="#"><div class="img-menu"><img src="images/physical-trainings.png" /></div><span>Physical Trainings</span></a></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/skill-trainings.png" /></div><span>Skill Trainings</a></span></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/coaching.png" /></div><span>Coaching</a></span></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/nutrition.png" /></div><span>Nutrition</a></span></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/physotherapy.png" /></div><span>Physotherapy</a></span></li>
+                                    <li><a href="#"><div class="img-menu"><img src="images/academy.png" /></div><span>Academy</a></span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <section id="contenedor_ppal">
+            <section id="contenido_ppal">
+                
+                <!-- CAJA HERRAMIENTAS MOVIL -->
+                <section id="contenido-herramientas">
+                    <!-- VER MAIL -->
+                    <section id="ver-mail-cont">
+                        <div id="ver-mail-ppal"><span class="ver-mail-title"><a href="#">Inbox</a></span><span class="ver-mail-send-message"><a href="#">Send New Message</a></span></div>
+                        <div id="ver-mail-list">
+                            <article class="ver-mail-users">
+                                <a href="#">
+                                    <div class="ver-mail-info-user">
+                                        <div class="ver-mail-img"><img src="../users/manuel-loero.jpg" /></div>
+                                        <div class="ver-mail-name">Manuel Loero <span class="ver-mail-type">(Player)</span></div>
+                                        <div class="ver-mail-message">Hola! Cómo te fue en el partido contra Andrés?</div>
+                                    </div>
+                                </a>
+                                <div class="ver-mail-archive-reply">
+                                    <button class="ver-mail-archive" type="button">Archivo</button>
+                                    <button class="ver-mail-reply" type="button">Reply</button>
+                                </div>
+                            </article>
+                            <article class="ver-mail-users">
+                                <a href="#">
+                                    <div class="ver-mail-info-user">
+                                        <div class="ver-mail-img"><img src="../users/andres-herrera.jpg" /></div>
+                                        <div class="ver-mail-name">Andrés Herrera <span class="ver-mail-type">(Player)</span></div>
+                                        <div class="ver-mail-message">Éxito en el encuentro de hoy amigo.</div>
+                                    </div>
+                                </a>
+                                <div class="ver-mail-archive-reply">
+                                    <button class="ver-mail-archive" type="button">Archivo</button>
+                                    <button class="ver-mail-reply" type="button">Reply</button>
+                                </div>
+                            </article>
+                            <article class="ver-mail-users">
+                                <a href="#">
+                                    <div class="ver-mail-info-user">
+                                        <div class="ver-mail-img"><img src="../users/pedro-palacios.jpg" /></div>
+                                        <div class="ver-mail-name">Pedro Palacios <span class="ver-mail-type">(Player)</span></div>
+                                        <div class="ver-mail-message">¿De que academia eres, amigo?</div>
+                                    </div>
+                                </a>
+                                <div class="ver-mail-archive-reply">
+                                    <button class="ver-mail-archive" type="button">Archivo</button>
+                                    <button class="ver-mail-reply" type="button">Reply</button>
+                                </div>
+                            </article>
+                            <article class="ver-mail-users">
+                                <a href="#">
+                                    <div class="ver-mail-info-user">
+                                        <div class="ver-mail-img"><img src="../users/loredana-assandria.jpg" /></div>
+                                        <div class="ver-mail-name">Loredana Assandria <span class="ver-mail-type">(Player)</span></div>
+                                        <div class="ver-mail-message">Hola! Luego del entrenamiento vamos al cine...</div>
+                                    </div>
+                                </a>
+                                <div class="ver-mail-archive-reply">
+                                    <button class="ver-mail-archive" type="button">Archivo</button>
+                                    <button class="ver-mail-reply" type="button">Reply</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div id="ver-mail-all"><a href="#">See all</a></div>
+                    </section>
+
+                    <!-- VER NOTIFICACIONES -->
+                    <section id="ver-notificaciones-cont">
+                        <div id="ver-notificaciones-ppal"><span class="ver-notificaciones-title"><a href="#">Notifications</a></span><span class="ver-notificaciones-mark-read"><a href="#">Mark as Read</a></span><span class="ver-notificaciones-settings"><a href="#">Settings</a></span></div>
+                        <div id="ver-notificaciones-list">
+                            <article class="ver-notificaciones-users">
+                                <a href="#">
+                                    <div class="ver-notificaciones-info-user">
+                                        <div class="ver-notificaciones-img"><img src="../users/manuel-loero.jpg" /></div>
+                                        <div class="ver-notificaciones-name">Manuel Loero <span class="ver-notificaciones-nota">ha agregado nuevas rutinas de ejercicios.</span></div>
+                                        <div class="ver-notificaciones-type">Entrenamiento <span class="ver-notificaciones-cantidad">(2)</span></div>
+                                    </div>
+                                </a>
+                                <div class="ver-notificaciones-check-uncheck">
+                                    <div class="ver-notificaciones-check"><a href="#"><img src="images/check.png" /></a></div>
+                                    <div class="ver-notificaciones-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                                </div>
+                                <div class="ver-notificaciones-date">May 2014</div>
+                            </article>
+                            <article class="ver-notificaciones-users">
+                                <a href="#">
+                                    <div class="ver-notificaciones-info-user">
+                                        <div class="ver-notificaciones-img"><img src="../users/andres-herrera.jpg" /></div>
+                                        <div class="ver-notificaciones-name">Andrés Herrera <span class="ver-notificaciones-nota">ha agregado nuevas imagenes a su album de ejercicios.</span></div>
+                                        <div class="ver-notificaciones-type">Ejercicios <span class="ver-notificaciones-cantidad">(5)</span></div>
+                                    </div>
+                                </a>
+                                <div class="ver-notificaciones-check-uncheck">
+                                    <div class="ver-notificaciones-check"><a href="#"><img src="images/check.png" /></a></div>
+                                    <div class="ver-notificaciones-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                                </div>
+                                <div class="ver-notificaciones-date">Apr 2014</div>
+                            </article>
+                            <article class="ver-notificaciones-users">
+                                <a href="#">
+                                    <div class="ver-notificaciones-info-user">
+                                        <div class="ver-notificaciones-img"><img src="../users/pedro-palacios.jpg" /></div>
+                                        <div class="ver-notificaciones-name">Pedro Palacios <span class="ver-notificaciones-nota">ha agregado nuevos amigos.</span></div>
+                                        <div class="ver-notificaciones-type">Amigos(as) <span class="ver-notificaciones-cantidad">(5)</span></div>
+                                    </div>
+                                </a>
+                                <div class="ver-notificaciones-check-uncheck">
+                                    <div class="ver-notificaciones-check"><a href="#"><img src="images/check.png" /></a></div>
+                                    <div class="ver-notificaciones-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                                </div>
+                                <div class="ver-notificaciones-date">Jun 2014</div>
+                            </article>
+                            <article class="ver-notificaciones-users">
+                                <a href="#">
+                                    <div class="ver-notificaciones-info-user">
+                                        <div class="ver-notificaciones-img"><img src="../users/loredana-assandria.jpg" /></div>
+                                        <div class="ver-notificaciones-name">Loredana Assandria <span class="ver-notificaciones-nota">ha agregado una nota sobre salud.</span></div>
+                                        <div class="ver-notificaciones-type">Salud <span class="ver-notificaciones-cantidad">(1)</span></div>
+                                    </div>
+                                </a>
+                                <div class="ver-notificaciones-check-uncheck">
+                                    <div class="ver-notificaciones-check"><a href="#"><img src="images/check.png" /></a></div>
+                                    <div class="ver-notificaciones-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                                </div>
+                                <div class="ver-notificaciones-date">Apr 2014</div>
+                            </article>
+                        </div>
+                        <div id="ver-notificaciones-all"><a href="#">See all</a></div>
+                    </section>
+
+                    <!-- VER SHOP -->
+                    <section id="ver-shop-cont">
+                        <div id="ver-shop-ppal"><span class="ver-shop-title"><a href="#">Shop Notifications</a></span><span class="ver-shop-settings"><a href="#">Settings</a></span></div>
+                        <div id="ver-shop-list">
+                            <article class="ver-shop-users">
+                                <a href="#">
+                                    <div class="ver-shop-info-user">
+                                        <div class="ver-shop-img"><img src="../users/manuel-loero.jpg" /></div>
+                                        <div class="ver-shop-name-product">Nike Lunar Ballistec<span class="ver-shop-type-product">Men's Tennis Shoes</span></div>
+                                        <div class="ver-shop-price">$165</div>
+                                    </div>
+                                </a>
+                                <div class="ver-shop-check-uncheck">
+                                    <div class="ver-shop-check"><a href="#"><img src="images/check.png" /></a></div>
+                                    <div class="ver-shop-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                                </div>
+                                <div class="ver-shop-category">Men Shoes<span class="ver-shop-category-n">(12)</span></div>
+                                <div class="ver-shop-date">May 2014</div>
+                            </article>
+                            <article class="ver-shop-users">
+                                <a href="#">
+                                    <div class="ver-shop-info-user">
+                                        <div class="ver-shop-img"><img src="../users/andres-herrera.jpg" /></div>
+                                        <div class="ver-shop-name-product">Puma Lunar Ballistec<span class="ver-shop-type-product">Men's Tennis Shoes</span></div>
+                                        <div class="ver-shop-price">$185</div>
+                                    </div>
+                                </a>
+                                <div class="ver-shop-check-uncheck">
+                                    <div class="ver-shop-check"><a href="#"><img src="images/check.png" /></a></div>
+                                    <div class="ver-shop-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                                </div>
+                                <div class="ver-shop-category">Men Shoes<span class="ver-shop-category-n">(12)</span></div>
+                                <div class="ver-shop-date">Feb 2014</div>
+                            </article>
+                            <article class="ver-shop-users">
+                                <a href="#">
+                                    <div class="ver-shop-info-user">
+                                        <div class="ver-shop-img"><img src="../users/pedro-palacios.jpg" /></div>
+                                        <div class="ver-shop-name-product">Nike Lunar Ballistec<span class="ver-shop-type-product">Men's Tennis Shoes</span></div>
+                                        <div class="ver-shop-price">$165</div>
+                                    </div>
+                                </a>
+                                <div class="ver-shop-check-uncheck">
+                                    <div class="ver-shop-check"><a href="#"><img src="images/check.png" /></a></div>
+                                    <div class="ver-shop-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                                </div>
+                                <div class="ver-shop-category">Men Clothes<span class="ver-shop-category-n">(10)</span></div>
+                                <div class="ver-shop-date">Jan 2014</div>
+                            </article>
+                            <article class="ver-shop-users">
+                                <a href="#">
+                                    <div class="ver-shop-info-user">
+                                        <div class="ver-shop-img"><img src="../users/loredana-assandria.jpg" /></div>
+                                        <div class="ver-shop-name-product">Nike Lunar Ballistec<span class="ver-shop-type-product">Men's Tennis Shoes</span></div>
+                                        <div class="ver-shop-price">$165</div>
+                                    </div>
+                                </a>
+                                <div class="ver-shop-check-uncheck">
+                                    <div class="ver-shop-check"><a href="#"><img src="images/check.png" /></a></div>
+                                    <div class="ver-shop-uncheck"><a href="#"><img src="images/uncheck.png" /></a></div>
+                                </div>
+                                <div class="ver-shop-cat-date">
+                                    <div class="ver-shop-category">Women Shoes<span class="ver-shop-category-n">(5)</span></div>
+                                    <div class="ver-shop-date">Jun 2014</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div id="ver-shop-friends-wish">
+                            <div class="ver-shop-friends"><img src="images/friends.png" /><span><a href="#">Friends Gifting</a></span></div>
+                            <div class="ver-shop-wish"><img src="images/wish.png" /><span><a href="#">Wish List</a></span></div>
+                        </div>
+                        <div id="ver-shop-all"><a href="#">See all</a></div>
+                    </section>
+                </section>
+            </section>
+        </section>
+        
+        <footer>
+            <div id="footer">
+                <div id="copyright_footer">
+                    <p>2014 - Team Sports World</p>
+                </div>
+                <div id="menu_footer">
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

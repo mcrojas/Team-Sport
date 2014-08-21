@@ -179,7 +179,6 @@
         margin-top: 0px;
     }
     
-    
     /* EVENTOS */
     #events #tabs-events{
         display: inline-block;
@@ -189,6 +188,17 @@
         overflow: auto;
         height: 260px;
         overflow-x: hidden;
+    }
+    
+    #events .ui-tabs .ui-tabs-nav {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    #events #tabs-events{
+        border: none;
+        padding: 0;
     }
     
     #events #my-events #my-events-img{
@@ -279,7 +289,7 @@
         font-size: 1em;
         font-family: 'FuturaLTLightRegular';
     }
-
+    
     #contenido_ppal #shop {
         background-color: #FFF;
         color: #9e9e9e;
@@ -296,9 +306,7 @@
         text-decoration: none;
     }
     
-    
     /* SHOP */
-    
     #shop .titulo_shop{
         background-color: #2d5014;
         color: white;
@@ -355,8 +363,15 @@
 
     #contenido_ppal #search .search{
         height: 110px;
-        line-height: 110px;
+        line-height: 145px;
         padding-left: 110px;
+    }
+    
+    #contenido_ppal #search .search textarea{
+        width: 90%;
+        text-align: center;
+        color: #9e9e9e;
+        font-family: 'FuturaLTMediumRegular';
     }
     
     #contenido_ppal #performance{
@@ -385,6 +400,7 @@
     #contenido_ppal #performance .graficas img{
         width: 100%;
     }
+    
     
     #contenido_ppal #tournaments {
         background-color: #FFF;
@@ -443,6 +459,10 @@
 }
 
 @media screen and (min-width: 480px){
+    header figure img {
+        padding: 1em 0em 1em 1em;
+    }
+    
     #contenido_ppal #datos_personales #nombre_usuario {
         width: 55%;
     }
@@ -484,6 +504,14 @@
         height: 295px;
     }
     
+    #events .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+        width: 25%;
+    }
+    
+    #events .ui-tabs .ui-tabs-nav li {
+        width: 25%;
+    }
+    
     #shop .jcarousel-control-next {
         margin-left: 92%;
     }
@@ -505,16 +533,28 @@
         width: 50%;
     }
     
-    #contenido_ppal #team_sport_network .description-teamsport {
-        display: block;
+    #contenido_ppal #datos_personales {
+        width: 94%;
     }
     
-    #contenido_ppal #datos_personales {
-        width: 95%;
+    #contenido_ppal #datos_personales #nombre_usuario {
+        width: 65%;
+    }
+    
+    #contenido_ppal #datos_personales #informacion_ppal {
+        width: 25%;
+    }
+    
+    #contenido_ppal #datos_personales #informacion_secundaria {
+        width: 35%;
     }
     
     #contenido_ppal #record_book {
         width: 48%;
+    }
+    
+    #contenido_ppal #team_sport_network .description-teamsport {
+        display: block;
     }
     
     #contenido_ppal #team_sport_network {
@@ -524,6 +564,10 @@
     
     #contenido_ppal #events {
         width: 95%;
+    }
+    
+    #contenido_ppal #events .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+        font-size: 1.2em;
     }
     
     #contenido_ppal #shop {
@@ -545,29 +589,10 @@
     #contenido_ppal #tournaments {
         width: 95%;
     }
-    
-    #contenido_ppal #datos_personales #nombre_usuario {
-        width: 65%;
-    }
-    
-    #contenido_ppal #datos_personales #informacion_ppal {
-        width: 25%;
-    }
-    
-    #contenido_ppal #datos_personales #informacion_secundaria {
-        width: 35%;
-    }
-    
-    #events .ui-tabs .ui-tabs-nav li.ui-tabs-active {
-        width: 25%;
-    }
-    
-    #events .ui-tabs .ui-tabs-nav li {
-        width: 25%;
-    }
 }
 
-@media screen and (min-width: 600px){
+/* Para Tablets pequeñas */
+@media screen and (min-width: 600px){    
     #contenido_ppal #record_book {
         width: 48.2%;
     }
@@ -577,8 +602,8 @@
     }
 }
 
-/* Para tablets grandes */
-@media screen and (min-width: 766px){
+/* Para Tablets grandes */
+@media screen and (min-width: 766px){   
     #contenido_ppal #datos_personales #informacion_ppal {
         width: 30%;
     }
@@ -586,40 +611,9 @@
     #contenido_ppal #datos_personales #informacion_secundaria {
         width: 40%;
     }
-
+    
     #contenido_ppal #record_book {
         width: 49%;
-    }
-    
-    #shop .jcarousel-control-next {
-        margin-left: 96%;
-    }
-    
-    #contenido-herramientas {
-        margin: 0em 4em;
-    }
-    
-    #contenido-herramientas #ver-mail-cont {
-        width: 55%;
-        margin-left: 25%;
-    }
-    
-    #contenido-herramientas #ver-notificaciones-cont {
-        width: 50%;
-        margin-left: 25%;
-    }
-    
-    #contenido-herramientas #ver-notificaciones-cont #ver-notificaciones-list {
-        height: 225px;
-    }
-    
-    #contenido-herramientas #ver-shop-cont{
-        width: 50%;
-        margin-left: 25%;
-    }
-    
-    #shop .shop-content .shop-content-title-bg {
-        width: 210px;
     }
     
     #events #my-events {
@@ -651,11 +645,32 @@
         width: 65%;
         float: right;
     }
+    
+    #shop .jcarousel-control-next {
+        margin-left: 96%;
+    }
+    
+    #contenido-herramientas #ver-shop-cont{
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    #shop .shop-content .shop-content-title-bg {
+        width: 210px;
+    }
 }
 
 @media screen and (min-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
+    
     header {
         position: inherit;
+    }
+    
+    header figure {
+        width: 40%;
     }
     
     nav{
@@ -663,37 +678,11 @@
     }
     
     #contenedor_ppal{
-        margin-top: 0px;
-    }
-    
-    #contenido_ppal{
-        position: relative;
-        left: 50%;
-        top: 50%;
-        margin-top: 0px;
-        margin-left: -392px;
+        margin-top: 60px;
     }
     
     #contenido_ppal #datos_personales #nombre_usuario {
         width: 75%;
-    }
-    header figure {
-        width: 40%;
-    }
-        
-    #contenido-herramientas #ver-mail-cont {
-        width: 55%;
-        margin-left: 51%;
-    }
-    
-    #contenido-herramientas #ver-notificaciones-cont {
-        width: 50%;
-        margin-left: 56%;
-    }
-    
-    #contenido-herramientas #ver-notificaciones-cont:before, #contenido-herramientas #ver-notificaciones-cont:after {
-        bottom: 342px;
-        left: 80%;
     }
     
     #contenido-herramientas #ver-shop-cont {
@@ -721,40 +710,18 @@
         bottom: 394px;
         left: 97%;
     }
-    
-    #contenido-usuarioenlinea {
-        left: 29%;
-    }
 }
 
 @media screen and (min-width: 955px){
-    header {
-        position: inherit;
-    }
-    header #nav-movil {
-        margin-top: -25px;
+    header figure {
+        width: 40%;
     }
     
-    #contenido_ppal {
-        margin-left: -468px;
+    #contenedor_ppal{
+        background-image: url('../images/bg-dashboard.jpg');
+        background-size: 2050px auto;
     }
     
-    #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
-        bottom: 394px;
-        left: 95%;
-    }
-    
-    #contenido-usuarioenlinea {
-        position: absolute;
-    }
-    
-    #contenido-usuarioenlinea {
-        left: 30%;
-    }
-    
-    #contenido-herramientas {
-        position: absolute;
-    }
     #contenido_ppal #datos_personales {
         width: 31%;
         height: 400px;
@@ -770,6 +737,10 @@
         padding-top: 0px;
     }
     
+    #contenido_ppal #datos_personales #informacion_ppal {
+        width: 38%;
+    }
+    
     #contenido_ppal #record_book {
         width: 31%;
         margin-left: 0px;
@@ -782,13 +753,42 @@
         margin-right: 0px;
         margin-left: 17px;
     }
-    #contenido_ppal #datos_personales #informacion_ppal {
-        width: 38%;
-    }
     
     #contenido_ppal #events {
         width: 64%;
     }
+    
+    #events #event {
+        height: 293px;
+    }
+    
+    #events #my-events{
+        height: 293px;
+    }
+    
+    #events #incomming-events{
+        height: 293px;
+    }
+    
+    #events #past-events{
+        height: 293px;
+    }
+    
+    #events .ui-tabs .ui-tabs-nav li {
+        width: 25%;
+        height: 47px;
+        line-height: 30px;
+    }
+    
+    #contenido_ppal #events .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+        font-size: 1.2em;
+    }
+    
+    #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
+        bottom: 394px;
+        left: 95%;
+    }
+    
     #contenido_ppal #shop {
         width: 31.3%;
         margin-left: 0px;
@@ -814,12 +814,7 @@
         margin-left: 0px;
         margin-right: 0px;
     }
-    #events .ui-tabs .ui-tabs-nav li {
-        width: 25%;
-        height: 47px;
-        line-height: 30px;
-    }
-
+    
     #contenido_ppal #performance {
         width: 64%;
     }
@@ -830,19 +825,48 @@
         margin-left: 0px;
         margin-right: 0px;
     }
-}
-
-@media screen and (min-width: 1100px){
-    header #nav-movil {
-        margin-top: -15px;
+        
+    #contenido-herramientas #ver-notificaciones-cont:before, #contenido-herramientas #ver-notificaciones-cont:after {
+        bottom: 333px;
+        left: 52%;
     }
     
+    #contenido-herramientas #ver-shop-cont {
+        width: 40%;
+    }
+    
+    #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
+        bottom: 345px;
+        left: 90%;
+    }
+}
+
+@media screen and (min-width: 1000px){ 
+    #contenido-herramientas #ver-mail-cont:before, #contenido-herramientas #ver-mail-cont:after {
+        bottom: 333px;
+        left: 37%;
+    }
+    
+    #contenido-herramientas #ver-notificaciones-cont:before, #contenido-herramientas #ver-notificaciones-cont:after {
+        bottom: 333px;
+        left: 48%;
+    }
+    
+    #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
+        bottom: 345px;
+        left: 83%;
+    }
+}
+
+/* Para Desktop */
+@media screen and (min-width: 1100px){ 
     #contenido_ppal{
-        height: 1315px;
-        width: 1100px;
+        height: 1335px;
+        width: 1065px;
         margin: 0em 8em;
-        background: rgba(0,0,0,0.3);
-        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
 
         position: relative;
         left: 50%;
@@ -850,36 +874,85 @@
         margin-top: 0px;
         margin-left: -547px;
     }
-    header #nav-movil li, header #nav-movil li a {
-        width: 366px;
+    
+    #contenido-herramientas #ver-mail-cont:before, #contenido-herramientas #ver-mail-cont:after {
+        bottom: 333px;
+        left: 46%;
     }
     
-    #contenido-usuarioenlinea {
-        left: 32%;
+    #contenido-herramientas #ver-notificaciones-cont:before, #contenido-herramientas #ver-notificaciones-cont:after {
+        bottom: 333px;
+        left: 55%;
     }
     
-    #contenido_ppal #performance .graficas {
-        padding-top: 15px;
+    #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
+        bottom: 345px;
+        left: 86%;
     }
     
     #contenido_ppal #datos_personales {
-        width: 32%;
+        width: 347px;
+        margin-left: -0.3em;
+        margin-top: 0;
+    }
+    
+    #contenido_ppal #record_book {
+        width: 347px;
+        margin-left: -0.3em;
+        margin-top: 0;
+    }
+    
+    #contenido_ppal #team_sport_network{
+        width: 347px;
+        margin-top: 0;
     }
     
     #contenido_ppal #events {
-        width: 64.5%;
+        width: 703px;
+        margin-left: -0.3em;
     }
     
-    #contenido_ppal #performance {
-        width: 64.5%;
+    #events #my-events .my-events-article {
+        padding-top: 26px;
     }
     
-    #contenido_ppal #tournaments {
-        height: 369px;
+    #events #my-events .my-events-left {
+        width: 25%;
+        border-right: 1px solid #9e9e9e;
     }
     
-    #contenido_ppal #events .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
-        font-size: 1.2em;
+    #events #my-events .my-events-right {
+        width: 70%;
+        border: none;
+    }
+    
+    #events #my-events .my-events-date {
+        padding-bottom: 10px;
+    }
+    
+    #events #my-events .my-events-title{
+        padding-left: 15px;
+    }
+    
+    #events #my-events .my-events-description{
+        padding-left: 15px;
+    }
+    
+    #contenido_ppal #shop {
+        width: 350px;
+    }
+    
+    #shop .jcarousel-control-next {
+        margin-left: 95%;
+    }
+    
+    #contenido_ppal #search {
+        width: 350px;
+    }
+    
+    #contenido_ppal #performance{
+        width: 703px;
+        margin-left: -0.3em;
     }
     
     #shop .jcarousel ul {
@@ -890,51 +963,19 @@
         width: 82%;
     }
     
+    #contenido_ppal #tournaments {
+        height: 397px;
+        width: 350px;
+    }
+    
+    #contenido_ppal #tournaments #list-tournament {
+        height: 275px;
+        margin-top: 1em;
+    }
+    
     #banners-bottoms{
         display: block;
         margin-top: 0px;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: -6px;
     }
-}
-
-@media screen and (min-width: 1200px){
-    #contenido-usuarioenlinea {
-        left: 33%;
-    }
-    
-    #contenido-herramientas #ver-mail-cont {
-        width: 35%;
-        margin-left: 50%;
-    }
-    
-    #contenido-herramientas #ver-mail-cont:before, #contenido-herramientas #ver-mail-cont:after {
-        bottom: 382px;
-        left: 67%;
-    }
-    
-    #contenido-herramientas #ver-notificaciones-cont{
-        width: 35%;
-        margin-left: 50%;
-    }
-    
-    #contenido-herramientas #ver-notificaciones-cont #ver-notificaciones-list {
-        height: 263px;
-    }
-    
-    #contenido-herramientas #ver-notificaciones-cont:before, #contenido-herramientas #ver-notificaciones-cont:after {
-        bottom: 380px;
-        left: 70%;
-    }
-    
-    #contenido-herramientas #ver-shop-cont {
-        width: 35%;
-        margin-left: 50%;
-    }
-    
-    #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
-        bottom: 394px;
-        left: 82%;
-    }
-
 }

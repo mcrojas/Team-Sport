@@ -35,6 +35,45 @@ input[type="submit"] {
 
 /* Para movil */
 @media screen and (min-width: 300px){
+    .slicknav_menu{
+        position: fixed;
+        right: 0%;
+        width: 100%;
+        font-family: 'FuturaLTMediumRegular';
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+    .slicknav_btn {
+        margin: 15px 5px 15px 5px;
+    }
+    
+    ul.slicknav_nav{
+        width: 100%;
+        margin-top: 145px;
+        background-color: white;
+    }
+    
+    .img-menu{
+        display: none;
+    }
+    
+    #errorMsg p{
+        margin: 0;
+    }
+    
+    #errorMsg{
+        font-family: 'FuturaLTLightRegular';
+        position: absolute;
+        background-color: white;
+        width: 42%;
+        text-align: center;
+    }
+    
+    #iniciar_sesion .error{
+        border-color: red;
+    }
+    
     header {
         background-color: #FFF;
         border-bottom: 1px solid #9e9e9e;
@@ -989,6 +1028,8 @@ input[type="submit"] {
         height: 33px;
         line-height: 33px;
         font-family: 'FuturaLTMediumRegular';
+        float: left;
+        width: 35%;
     }
 
     header #usuario_enlinea #herramientas{
@@ -1017,7 +1058,12 @@ input[type="submit"] {
     }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px){    
+    #errorMsg {
+        width: 231px;
+        margin-top: 35px;
+    }
+    
     header figure {
         width: 40%;
     }
@@ -1107,41 +1153,73 @@ input[type="submit"] {
 }
 
 @media screen and (min-width: 700px){
+    #errorMsg {
+        width: 255px;
+    }
+    
     #contenido-herramientas #ver-mail-cont:before, #contenido-herramientas #ver-mail-cont:after {
-        bottom: 382px;
+        bottom: 494px;
         left: 29%;
     }
     
     #contenido-herramientas #ver-notificaciones-cont:before, #contenido-herramientas #ver-notificaciones-cont:after {
-        bottom: 382px;
+        bottom: 494px;
         left: 39%;
     }
     
     #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
-        bottom: 394px;
+        bottom: 506px;
         left: 68%;
+    }
+    
+    #contenido-herramientas #ver-mail-cont {
+        margin: 10em;
+        margin-top: 0px;
+        width: 50%;
+    }
+    
+    #contenido-herramientas #ver-notificaciones-cont{
+        margin: 10em;
+        margin-top: 0px;
+        width: 50%;
+    }
+    
+    #contenido-herramientas #ver-shop-cont{
+        margin: 10em;
+        margin-top: 0px;
+        width: 50%;
     }
 }
 
 @media screen and (min-width: 748px){
+    #errorMsg {
+        width: 265px;
+    }
+
     #contenido-herramientas #ver-mail-cont:before, #contenido-herramientas #ver-mail-cont:after {
-        bottom: 382px;
+        bottom: 494px;
         left: 31%;
     }
     
     #contenido-herramientas #ver-notificaciones-cont:before, #contenido-herramientas #ver-notificaciones-cont:after {
-        bottom: 382px;
+        bottom: 494px;
         left: 40%;
     }
     
     #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
-        bottom: 394px;
+        bottom: 506px;
         left: 67%;
     }
 }
 
 /* Para tablets grandes */
 @media screen and (min-width: 766px){
+    #errorMsg {
+        width: 250px;
+        margin-left: 166px;
+        margin-top: 40px;
+    }
+    
     header figure img {
         width: 60%;
     }
@@ -1173,23 +1251,183 @@ input[type="submit"] {
     }
     
     #contenido-herramientas #ver-mail-cont:before, #contenido-herramientas #ver-mail-cont:after {
-        bottom: 382px;
-        left: 29%;
+        bottom: 494px;
+        left: 31%;
     }
     
     #contenido-herramientas #ver-notificaciones-cont:before, #contenido-herramientas #ver-notificaciones-cont:after {
-        bottom: 342px;
-        left: 39%;
+        bottom: 494px;
+        left: 40%;
     }
     
     #contenido-herramientas #ver-shop-cont:before, #contenido-herramientas #ver-shop-cont:after {
-        bottom: 394px;
-        left: 68%;
+        bottom: 506px;
+        left: 67%;
     }
 }
 
 /* Para tablets grandes */
 @media screen and (min-width: 800px){
+    body{
+        background-color: #477d1d;
+    }
+    
+    nav{
+        display: none;
+    }
+    
+    .slicknav_menu {
+        position: absolute;
+        top: 86px;
+    }
+    
+    ul.slicknav_nav {
+        margin-top: -1px;
+        background-color: transparent;
+        color: white;
+    }
+    
+    .slicknav_nav a{
+        color: white;
+    }
+    
+    .slicknav_nav a:hover{
+        color: white;
+    }
+    
+    .slicknav_btn.slicknav_collapsed{
+        display: none;
+    }
+    
+    .slicknav_menu{
+        position: absolute;
+    }
+    
+    .slicknav_nav.slicknav_hidden{
+        display: block !important;
+    }
+    
+    .slicknav_nav li{
+        float: left;
+        width: 33%;
+        height: 61px;
+    }
+    
+    .slicknav_nav li.dashboard{
+        border: none;
+        border-right: 1px solid #b5cba5;
+    }
+    
+    .slicknav_nav li.dashboard a:hover{
+        border-bottom: 5px solid #ffde00;
+    }
+    
+    .slicknav_nav li.dashboard a{
+        height: 57px;
+        line-height: 57px;
+    }
+    
+    .slicknav_nav li.my-records{
+        border: none;
+        border-right: 1px solid #b5cba5;
+    }
+    
+    .slicknav_nav li.my-records a.slicknav_item:hover{
+        border-bottom: 5px solid #ffde00;
+    }
+    
+    .slicknav_nav li.my-records a{
+        height: 57px;
+        line-height: 57px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .slicknav_nav li.sport-control{
+        border: none;
+    }
+    
+    .slicknav_nav li.sport-control a.slicknav_item:hover{
+        border-bottom: 5px solid #ffde00;
+    }
+    
+    .slicknav_nav li.sport-control a{
+        height: 57px;
+        line-height: 57px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .my-records.slicknav_parent.slicknav_open ul li{
+        width: 100%;
+        background-color: white;
+        height: 70px;
+    }
+    
+    .my-records.slicknav_parent.slicknav_open ul li a{
+        color: #4c4c4c;
+        text-align: left;
+    }
+    
+    .my-records.slicknav_parent.slicknav_open ul li a span{
+        padding-left: 1em;
+    }
+    
+    .slicknav_nav li.my-records.slicknav_open ul li a:hover{
+        background-color: white;
+        color: #477D1D;
+    }
+    
+    .slicknav_nav li.my-records.slicknav_open{
+        background-color: white;
+        border: none;
+    }
+    
+    .slicknav_nav li.my-records.slicknav_open a{
+        color: #477D1D;
+    }
+    
+    .sport-control.slicknav_parent.slicknav_open ul li{
+        width: 100%;
+        background-color: white;
+        height: 70px;
+    }
+    
+    .sport-control.slicknav_parent.slicknav_open ul li a{
+        color: #4c4c4c;
+        text-align: left;
+    }
+    
+    .sport-control.slicknav_parent.slicknav_open ul li a span{
+        padding-left: 1em;
+    }
+    
+    .slicknav_nav li.sport-control.slicknav_open ul li a:hover{
+        background-color: white;
+        color: #477D1D;
+    }
+    
+    .slicknav_nav li.sport-control.slicknav_open{
+        background-color: white;
+        border: none;
+    }
+    
+    .slicknav_nav li.sport-control.slicknav_open a{
+        color: #477D1D;
+    }
+    
+    .img-menu{
+        display: block;
+        float: left;
+        padding-top: .6em;
+        padding-left: .8em;
+        padding-right: .6em;
+    }
+    
+    #errorMsg {
+        width: 270px;
+    }
+    
     header figure img {
         width: 40%;
     }
@@ -1209,10 +1447,12 @@ input[type="submit"] {
     
     #nav-movil #my-records-menu{
         height: auto;
+        overflow-x: hidden;
     }
     
     #nav-movil #sport-control-menu{
         height: auto;
+        overflow-x: hidden;
     }
     
     #nav-movil li, #nav-movil li a {
@@ -1311,9 +1551,10 @@ input[type="submit"] {
     }
     
     header #usuario_enlinea #herramientas {
-        width: 55%;
+        width: 90%;
+        padding-left: 50px;
     }
-    
+
     header #usuario_enlinea #herramientas .ver{
         float: left;
     }
@@ -1338,24 +1579,59 @@ input[type="submit"] {
         margin-left: -392px;
     }
     
+    #nav-movil ul #my-records-menu img {
+        padding-top: 15px;
+    }
+    
+    #nav-movil ul #sport-control-menu img {
+        padding-top: 15px;
+    }
+    
     #contenido-herramientas {
         margin-top: -80px !important;
         position: absolute;
         z-index: 999;
+        width: 100%;
+    }
+    
+    #contenido-herramientas #ver-mail-cont{
+        height: auto;
+        position: absolute;
+        right: 6%;
+        margin: 0;
+        top: 0px;
+        z-index: 999;
+    }
+    
+    #contenido-herramientas #ver-notificaciones-cont{
+        height: auto;
+        position: absolute;
+        top: 0px;
+        right: 6%;
+        margin: 0;
+        z-index: 999;
+    }
+    
+    #contenido-herramientas #ver-shop-cont{
+        height: auto;
+        position: absolute;
+        top: 0px;
+        right: 6%;
+        margin: 0;
+        z-index: 999;
     }
     
     #contenido-herramientas #ver-mail-cont:before, #contenido-herramientas #ver-mail-cont:after {
-        bottom: 382px;
-        left: 72%;
+        bottom: 333px;
+        left: 48%;
     }
     
     #contenido-usuarioenlinea{
         display: block;
         height: auto;
-        position: fixed;
+        position: absolute;
         top: 65px;
-        margin: 0em 4em;
-        left: 28%;
+        margin-left: -80px;
         z-index: 999;
     }
     
@@ -1370,15 +1646,15 @@ input[type="submit"] {
     }
 
     #contenido-usuarioenlinea #ver-usuarioenlinea:before {
-        bottom: 204px;
-        left: 85%;
+        bottom: 252px;
+        left: 88%;
         border-bottom-color: #9e9e9e;
         border-width: 11px;
     }
 
     #contenido-usuarioenlinea #ver-usuarioenlinea:after {
-        bottom: 204px;
-        left: 86%;
+        bottom: 252px;
+        left: 88%;
         border-bottom-color: #FFF;
         border-width: 10px;
     }
@@ -1414,7 +1690,18 @@ input[type="submit"] {
  
 }
 
+@media screen and (min-width: 900px){
+    #contenido-herramientas #ver-mail-cont:before, #contenido-herramientas #ver-mail-cont:after {
+        bottom: 333px;
+        left: 46%;
+    }
+}
+
 @media screen and (min-width: 955px){
+    header .slicknav_menu{
+        display: none;
+    }
+    
     header figure {
         width: 50%;
     }
@@ -1445,7 +1732,7 @@ input[type="submit"] {
     }
     
     #nav-movil li, #nav-movil li a {
-        width: 366px;
+        width: 315px;
     }
     
     #nav-movil ul#my-records-menu li a {
@@ -1454,11 +1741,49 @@ input[type="submit"] {
     #nav-movil #sport-control-menu li a {
         width: 297px;
     }
+    
+    header #usuario_enlinea #herramientas {
+        width: 80%;
+        padding-left: 105px;
+    }
+    #contenido-herramientas #ver-mail-cont {
+        width: 40%;
+    }
+    
+    #contenido-herramientas #ver-mail-cont:before, #contenido-herramientas #ver-mail-cont:after {
+        bottom: 333px;
+        left: 40%;
+    }
+    
+    #contenido-herramientas #ver-notificaciones-cont {
+        width: 40%;
+    }
 }
 
 
 /* Para Desktop */
 @media screen and (min-width: 1100px){   
+    .slicknav_menu {
+        z-index: 999;
+    }
+    
+    .slicknav_nav.slicknav_hidden{
+        width: 1109px;
+        margin: 0em 8em;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        margin-top: 0px;
+        margin-left: -547px;
+    }
+    
+    #errorMsg {
+        width: 250px;
+        margin-top: 45px;
+        margin-left: 0;
+        text-align: left;
+    }
+
     header #header {
         width: 1100px;
         height: 86px;
@@ -1475,6 +1800,11 @@ input[type="submit"] {
     
     header figure  img{
         padding: .7em 0em !important;
+    }
+    
+    header #usuario_enlinea #herramientas {
+        width: 70%;
+        padding-left: 180px;
     }
     
     header #inicio_sesion {
@@ -1529,8 +1859,20 @@ input[type="submit"] {
         padding-right: 88px;
     }
     
+    header #usuario_enlinea #nombre_usuario {
+        width: 40%;
+    }
+    
     nav #nav{
         margin-left: -546px;
+    }
+    
+    #nav-movil li, #nav-movil li a {
+        width: 366px;
+    }
+    
+    #contenido-herramientas {
+        margin-top: -225px !important;
     }
     
     #footer {

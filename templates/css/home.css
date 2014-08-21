@@ -239,6 +239,7 @@
 @media screen and (min-width: 955px){
     #contenedor_ppal{
         background-image: url('../images/bg-home.jpg');
+        background-size: 1835px auto;
     }
     
     #contenido_ppal{

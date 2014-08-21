@@ -3,12 +3,6 @@ $( document ).ready(function() {
     $('#input-image').change(function(e) {
         addImage(e); 
     });
-    
-    $.validate({
-    modules : 'location, date, security, file',
-    onModulesLoaded : function() {
-    }
-  });
 });
 
 function addImage(e){

@@ -1,12 +1,12 @@
 $( document ).ready(function() {
     //Menu movil
-    $('#menu-movil').click(function (){
+    /*$('#menu-movil').click(function (){
         $('nav #nav').css('display','block');
         $(".flexnav").flexNav({ 'animationSpeed' : 'fast' });
-    });
+    });*/
     
-    
-    
+    $('#nav-general').slicknav();
+    $('#menu-movil').wrap('.slicknav_menu');
     //Menu herramientas movil    
     $('.ver-mail').click(function (e) {
         e.preventDefault();

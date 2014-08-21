@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team Sports World - Register</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Team Sports World -" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/source/jquery.fancybox.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/register.css">
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="css/source/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="js/register.js"></script>
+        <script type="text/javascript" src="js/validation.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <figure>
+                    <img src="images/logo-teamsport.png" />
+                </figure>
+                <!-- FORMULARIO DE INICIO DE SESION -->
+                <div id="iniciar_sesion">
+                    <div id="inicio_sesion">
+                        <div class="email">
+                            <input id="email" type="email" name="email" placeholder="Email" />
+                        </div>
+                        <div class="password">
+                            <input id="password" type="password" name="password" placeholder="Password" />
+                        </div>
+                        <div class="submit">
+                            <input class="mybtn" type="submit" name="enviar" value="Log in" />
+                        </div>
+                        <a class="various" data-fancybox-type="iframe" href="reset-password.html">Forgot password?</a>
+                        <div id="errorMsg"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section id="contenedor_ppal">
+            <section id="contenido_ppal" class="registro-3">
+                <div id="informacion_registro">
+                    <div id="title">Please complete register</div>
+                    <div id="subtitle">The more info we have, the more effective the platform!</div>
+                    <div id="pasos">
+                        <div class="pasos paso-1"><img src="images/1.png" /></div>
+                        <div class="pasos paso-1"><img src="images/2.png" /></div>
+                        <div class="pasos paso-1"><img src="images/3-active.png" /></div>
+                    </div>
+                </div>
+                <div id="formulario-registro" class="formulario-3">
+                    <div class="title-register">Academic info</div>
+                    <!-- FORMULARIO PASO 1 -->
+                    <form id="form-register-3" action="" method="post">
+                        <div id="academy-name">
+                            <div class="academy-name">
+                                <input type="text" name="academy-name" placeholder="Academy name" />
+                            </div>
+                        </div>
+                        <div id="select-grade">
+                            <select id="select-grade">
+                                <option value="">Select grade</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div id="select-course">
+                            <select id="select-course">
+                                <option value="">Select course</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        
+                        <div id="more-info">
+                            <div class="more-info">Do you want to provide more info about your career, sponsors or other areas? <a href="#">Yes, I do. Show me more</a>. <span class="extra-info">(You can provide this info later)</span></div>
+                        </div>
+                        <div id="back-submit-skip">
+                            <div class="back-register">
+                                <input type="button" onclick="history.back();" name="back" value="Go Back" />
+                            </div>
+                            <div class="submit-register">
+                                <input type="submit" name="save" value="Save and go to dashboard" />
+                            </div>
+                            <div class="skip-step"><a href="#">Skip this step</a></div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div id="info-formulario">
+                    <div id="info-img"><img src="images/info.png" /></div>
+                    <div id="info-description">Team Sport stores your profile info for you so that we can show you graphics and statistics to help you to track your sport evolution. <a href="#">Learn more.</a></div>
+                </div>
+            </section>
+        </section>
+        
+        <footer>
+            <div id="footer">
+                <div id="copyright_footer">
+                    <p>2014 - Team Sport World</p>
+                </div>
+                <div id="menu_footer">
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
